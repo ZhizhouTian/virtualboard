@@ -1,7 +1,7 @@
 # These definitions override the defaults in config/config.make for juno
 
 TARGET_NO_BOOTLOADER := true
-TARGET_NO_KERNEL := true
+TARGET_NO_KERNEL := false
 
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -38,3 +38,5 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_FLASH_BLOCK_SIZE := 512
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
 
+KERNEL_CROSS_COMPILE := aarch64-linux-gnu-
+KERNEL_DEFCONFIG := virtualboard_k310_defconfig
